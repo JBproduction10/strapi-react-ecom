@@ -47,7 +47,7 @@ const Checkout = () => {
       })),
     };
 
-    const response = await fetch("https://strapi-api-ecom-aj99n.ondigitalocean.app/api/orders", {
+    const response = await fetch("https://strapi-api-ecom-uunka.ondigitalocean.app/api/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),

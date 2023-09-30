@@ -20,7 +20,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      "https://strapi-api-ecom-aj99n.ondigitalocean.app/api/items?populate=image",
+      "https://strapi-api-ecom-uunka.ondigitalocean.app/api/items?populate=image",
       { method: "GET" }
     );
     const itemsJson = await items.json();

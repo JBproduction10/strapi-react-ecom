@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
   async function getItem() {
     const item = await fetch(
-      `https://strapi-api-ecom-aj99n.ondigitalocean.app/api/items/${itemId}?populate=image`,
+      `https://strapi-api-ecom-uunka.ondigitalocean.app/api/items/${itemId}?populate=image`,
       {
         method: "GET",
       }
@@ -36,7 +36,7 @@ const ItemDetails = () => {
 
   async function getItems() {
     const items = await fetch(
-      `https://strapi-api-ecom-aj99n.ondigitalocean.app/api/items?populate=image`,
+      `https://strapi-api-ecom-uunka.ondigitalocean.app/api/items?populate=image`,
       {
         method: "GET",
       }
@@ -59,7 +59,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`https://strapi-api-ecom-aj99n.ondigitalocean.app${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`https://strapi-api-ecom-uunka.ondigitalocean.app${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
