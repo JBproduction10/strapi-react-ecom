@@ -17,22 +17,22 @@ const Item = ({ item, width }) => {
   } = useTheme();
 
   const { category, price, name, image } = item.attributes;
-  const {
-    data: {
-      attributes: {
-        formats: {
-          thumbnail: { url },
-        },
-      },
-    },
-  } = image;
-  // const url =
-  //   image &&
-  //   image.data &&
-  //   image.data.attributes &&
-  //   image.data.attributes.formats &&
-  //   image.data.attributes.formats.medium &&
-  //   image.data.attributes.formats.medium.url;
+  // const {
+  //   data: {
+  //     attributes: {
+  //       formats: {
+  //         thumbnail: { url },
+  //       },
+  //     },
+  //   },
+  // } = image;
+  const url =
+    image &&
+    image.data &&
+    image.data.attributes &&
+    image.data.attributes.formats &&
+    image.data.attributes.formats.medium &&
+    image.data.attributes.formats.medium.url;
   
   return (
     <Box width={width}>
