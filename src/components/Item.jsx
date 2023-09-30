@@ -45,7 +45,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`https://strapi-api-ecom-uunka.ondigitalocean.app${url}`}
+          src={`${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />
