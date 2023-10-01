@@ -48,7 +48,6 @@ const Item = ({ item, width }) => {
           src={`${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
-          crossorigin="anonymous"
         />
         <Box
           display={isHovered ? "block" : "none"}

@@ -61,7 +61,6 @@ const ItemDetails = () => {
             height="100%"
             src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
-            crossorigin="anonymous"
           />
         </Box>
 
